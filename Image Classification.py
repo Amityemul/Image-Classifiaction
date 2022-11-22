@@ -1,1 +1,1 @@
-print("Hello Guys Thsi is my first cicd project")
+print("Hello  first cicd project")
