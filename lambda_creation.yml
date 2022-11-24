@@ -6,5 +6,6 @@
       name: my
       aws_access_key: AKIAQVPNG65ZLWLM2YXI
       aws_secret_key: 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
+      region: ap-south-1
       state: present
       
