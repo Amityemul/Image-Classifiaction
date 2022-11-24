@@ -1,0 +1,16 @@
+- name: Deploy AWS Lambda function
+  hosts: localhost
+
+  tasks:
+    - archive:
+        path: /var/lib/jenkins/workspace/cicd_new_poc
+        format: zip
+        dest: /var/lib/jenkins/workspace/cicd_new_poc/all.zip
+    - name: Create lambda function
+      lambda:
+        name: "backup_ec2_via_ansible"
+        state: present
+        zip_file: /var/lib/jenkins/workspace/cicd_new_poc/all.zip
+        runtime: 'python2.7'
+        handler: 'backup-ec2.run_handler'
+        description: "Testing Backup of EC2 instance via Ansible"          
