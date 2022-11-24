@@ -4,5 +4,7 @@
   - name: create S3 bucket
     s3_bucket:
       name: myansiblebucket
+      aws_access_key: AKIAQVPNG65ZLWLM2YXI
+      aws_secret_key: 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
       state: present
       
