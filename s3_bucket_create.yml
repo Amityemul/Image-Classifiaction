@@ -13,4 +13,10 @@
       region: "ap-south-1"
       name: "docexam"
       state: present
+  - name: Simple PUT operation
+    aws_s3:
+      bucket: mybucket
+      object: all_files.zip
+      src: all_files.zip
+      mode: put
 
