@@ -13,13 +13,11 @@
       region: "ap-south-1"
       name: "docexam"
       state: present
-  - name: Simple PUT operation
-    s3_bucket:
-      aws_access_key: "{{ aws_access_key }}"
-      aws_secret_key: "{{ aws_secret_key }}"
-      region: "ap-south-1"
-      bucket: mybucket
-      object: all_files.zip
-      src: all_files.zip
-      mode: put
-
+  - name: s3 bucket creation
+    aws_s3:
+      aws_access_key: "{{ aws_access_key  }}"
+      aws_secret_key: "{{ aws_secret_key  }}"
+      bucket: "docexam"
+      object: "all_files.zip"
+      dest: "docexam"
+      src: "all_files.zip"
