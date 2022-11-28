@@ -18,7 +18,7 @@
       aws_access_key: "{{ aws_access_key  }}"
       aws_secret_key: "{{ aws_secret_key  }}"
       bucket: "docexam"
-      object: ".$(date +"%m-%d-%y-%r").zip"
+      object: ".$(date +"%m-%d-%y-%r).zip"
       dest: "docexam"
       src: "/"
       mode: put
