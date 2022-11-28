@@ -1,1 +1,2 @@
-print("Hello new project")
+def lambda_handler(event,context):
+      print("Inside lambda function")
