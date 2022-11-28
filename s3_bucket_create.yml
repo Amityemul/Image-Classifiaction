@@ -14,7 +14,10 @@
       name: "docexam"
       state: present
   - name: Simple PUT operation
-    aws_s3:
+    s3_bucket:
+      aws_access_key: "{{ aws_access_key }}"
+      aws_secret_key: "{{ aws_secret_key }}"
+      region: "ap-south-1"
       bucket: mybucket
       object: all_files.zip
       src: all_files.zip
