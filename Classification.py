@@ -1,2 +1,2 @@
 def lambda_handler(event,context):
-      print("Inside lambda")
+      print("Inside lambda h")
