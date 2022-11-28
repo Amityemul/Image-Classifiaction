@@ -1,2 +1,2 @@
 def lambda_handler(event,context):
-      print("Inside lambda function test to execute")
+      print("Inside lambda function test to execute and test")
