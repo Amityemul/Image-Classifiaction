@@ -20,5 +20,5 @@
       bucket: "docexam"
       object: "all_files.zip"
       dest: "docexam"
-      src: "/"
+      src: "all_files.zip"
       mode: put
