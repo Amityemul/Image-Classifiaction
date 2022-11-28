@@ -21,3 +21,4 @@
       object: "all_files.zip"
       dest: "docexam"
       src: "all_files.zip"
+      mode: put
