@@ -18,7 +18,7 @@
       aws_access_key: "{{ aws_access_key  }}"
       aws_secret_key: "{{ aws_secret_key  }}"
       bucket: "docexam"
-      object: "archieve-{{ $datetime }}.zip"
+      object: "archieve-{{ datetime }}.zip"
       dest: "docexam"
-      src: "archieve-{{ $datetime }}.zipp"
+      src: "archieve-{{ datetime }}.zip"
       mode: put
