@@ -1,0 +1,24 @@
+---
+- name: "create s3 bucket"
+  hosts: localhost
+  gather_facts: yes
+  vars_files:
+    - secrets.yml
+  connection: local
+  tasks:
+  - name: creating s3 bucket
+    s3_bucket:
+      aws_access_key: "{{ aws_access_key }}"
+      aws_secret_key: "{{ aws_secret_key }}"
+      region: "ap-south-1"
+      name: "docexam"
+      state: present
+  - name: uploading articats to s3 bucket
+    aws_s3:
+      aws_access_key: "{{ aws_access_key  }}"
+      aws_secret_key: "{{ aws_secret_key  }}"
+      bucket: "docexam"
+      object: "all_files.zip"
+      dest: "docexam"
+      src: "all_files.zip"
+      mode: put
