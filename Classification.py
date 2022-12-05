@@ -1,5 +1,5 @@
 
 def lambda_handler(event,context):
-      print("Hi everyone one")
+      print("Hi everyon")
 print("checking the deployment commit")
 
