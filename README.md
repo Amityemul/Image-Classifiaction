@@ -93,7 +93,7 @@ loss,acc
 I got accuracy of 74% on testing Data
 
 
-SAMPLE OUTPUT:
+
 
 import matplotlib.pyplot as plt
 plt.figure(figsize=(10,10))
