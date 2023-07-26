@@ -1,6 +1,6 @@
 Classiﬁcation   of Images of Childhood Pneumonia using   Convolutional Neural Networks
 
-Keywords: Pneumonia, X-Ray, CNN.
+Keywords: Pneumonia, X-Ray, CNN , ANN
 Abstract: In this paper we describe a comparative classiﬁcation of Pneumonia using Convolution Neural Network. The database used was Chest X-Ray Images for Classiﬁcation made available by kaggel with a total of 5216 train and 624 test images , with 2 classes: normal and pneumonia.
 
 1) INTRODUCTION:
